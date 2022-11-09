@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-dashboard-dnd/static/css/main.aa0c8945.css",
+    "main.js": "/test-dashboard-dnd/static/js/main.692c3bc3.js",
+    "index.html": "/test-dashboard-dnd/index.html",
+    "main.aa0c8945.css.map": "/test-dashboard-dnd/static/css/main.aa0c8945.css.map",
+    "main.692c3bc3.js.map": "/test-dashboard-dnd/static/js/main.692c3bc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa0c8945.css",
+    "static/js/main.692c3bc3.js"
+  ]
+}
