@@ -1,8 +1,7 @@
-import { Header } from "./components/Header/Header";
-import { Grid } from "./components/Grid/Grid";
-import "react-grid-layout/css/styles.css";
+import { Header, Grid } from "../../components";
 import { useState } from "react";
-import { getRandomChartName } from "./helpers/getRandomChartName";
+import { getRandomChartName } from "../../helpers/getRandomChartName";
+import { Main } from "./App.styled";
 
 const INITIAL_CHARTS = [
   { id: 1, name: "PieChart" },
@@ -10,7 +9,7 @@ const INITIAL_CHARTS = [
   { id: 3, name: "AreaChart" },
 ];
 
-export default function App() {
+export const App = () => {
   const [charts, setCharts] = useState(INITIAL_CHARTS);
 
   const handleAddChart = () => {
@@ -22,9 +21,9 @@ export default function App() {
   return (
     <>
       <Header addChart={handleAddChart} />
-      <main style={{ padding: "0 20px" }}>
+      <Main>
         <Grid charts={charts} />
-      </main>
+      </Main>
     </>
   );
-}
+};

@@ -7,6 +7,8 @@ const GRID_STYLES = {
   backgroundColor: "rgba(209, 209, 209, 0.747)",
   boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
   marginBottom: "20px",
+  marginLeft: "auto",
+  marginRight: "auto",
 };
 
 const DATA_GRID = {

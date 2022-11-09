@@ -1,8 +1,10 @@
+import { Button, StyledHeader, Title } from "./Header.styled";
+
 export const Header = ({ addChart }) => {
   return (
-    <header>
-      <h1>Dashboard</h1>
-      <button onClick={() => addChart()}>Add chart</button>
-    </header>
+    <StyledHeader>
+      <Title>Dashboard</Title>
+      <Button onClick={() => addChart()}>Add chart</Button>
+    </StyledHeader>
   );
 };

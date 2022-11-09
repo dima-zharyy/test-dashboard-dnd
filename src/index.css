@@ -1,3 +1,5 @@
+@import-normalize;
+
 * {
   margin: 0;
   padding: 0;
@@ -14,4 +16,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }

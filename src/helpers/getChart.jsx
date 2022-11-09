@@ -1,6 +1,4 @@
-import { PieChart } from "../components/Charts/PieChart";
-import { LineChart } from "../components/Charts/LineChart";
-import { AreaChart } from "../components/Charts/AreaChart";
+import { PieChart, LineChart, AreaChart } from "../components";
 
 export const getChart = (chart) => {
   switch (chart) {
