@@ -22,7 +22,7 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+const options = {
   responsive: true,
   plugins: {
     legend: {
@@ -30,19 +30,20 @@ export const options = {
     },
     title: {
       display: true,
-      text: "Chart.js Line Chart",
+      text: "Area Chart",
     },
   },
+  maintainAspectRatio: false,
 };
 
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
 
-export const data = {
+const data = {
   labels,
   datasets: [
     {
       fill: true,
-      label: "Dataset 2",
+      label: "Income 2022",
       data: labels.map(() => Math.floor(Math.random() * (1000 + 1))),
       borderColor: "rgb(53, 162, 235)",
       backgroundColor: "rgba(53, 162, 235, 0.5)",

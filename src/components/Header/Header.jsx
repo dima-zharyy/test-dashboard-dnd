@@ -1,8 +1,8 @@
-export const Header = () => {
+export const Header = ({ addChart }) => {
   return (
     <header>
       <h1>Dashboard</h1>
-      <button>Add chart</button>
+      <button onClick={() => addChart()}>Add chart</button>
     </header>
   );
 };

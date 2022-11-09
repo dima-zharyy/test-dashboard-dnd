@@ -4,7 +4,7 @@ import { Pie } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export const options = {
+const options = {
   responsive: true,
   plugins: {
     legend: {
@@ -12,17 +12,20 @@ export const options = {
     },
     title: {
       display: true,
-      text: "Chart.js Pie Chart",
+      text: "Pie Chart",
     },
   },
+  maintainAspectRatio: false,
 };
 
-export const data = {
-  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+const labels = ["January", "February", "March", "April", "May", "June", "July"];
+
+const data = {
+  labels: labels,
   datasets: [
     {
       label: "# of Votes",
-      data: [12, 19, 3, 5, 2, 3],
+      data: labels.map(() => Math.floor(Math.random() * (1000 + 1))),
       backgroundColor: [
         "rgba(255, 99, 132, 0.2)",
         "rgba(54, 162, 235, 0.2)",
